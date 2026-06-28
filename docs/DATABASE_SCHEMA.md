@@ -1,160 +1,111 @@
-Database Schema
+# Collection: Recruiters
 
-Database Name
+**Purpose:** Stores recruiter accounts.
 
-"hiro_db"
-
----
-
-Collection: Recruiters
-
-Purpose: Stores recruiter accounts.
-
-_id: ObjectId
-name: String
-email: String
-company: String
-role: String
-createdAt: Date
+| Field | Type | Description |
+|-------|------|-------------|
+| _id | ObjectId | Unique recruiter ID |
+| name | String | Recruiter name |
+| email | String | Email address |
+| company | String | Company name |
+| role | String | Recruiter/Admin |
+| createdAt | Date | Account creation timestamp |
 
 ---
 
-Collection: Jobs
+# Collection: Jobs
 
-Purpose: Stores job descriptions and requirements.
+**Purpose:** Stores job descriptions.
 
-_id: ObjectId
-title: String
-description: String
-requiredSkills: Array
-preferredSkills: Array
-experience: String
-location: String
-employmentType: String
-embedding: Array
-createdBy: ObjectId
-createdAt: Date
-
----
-
-Collection: Candidates
-
-Purpose: Stores candidate profiles.
-
-_id: ObjectId
-name: String
-email: String
-phone: String
-resumeUrl: String
-github: String
-linkedin: String
-portfolio: String
-skills: Array
-education: Array
-experience: Array
-projects: Array
-certifications: Array
-embedding: Array
-createdAt: Date
+| Field | Type | Description |
+|-------|------|-------------|
+| _id | ObjectId | Unique job ID |
+| title | String | Job title |
+| description | String | Full job description |
+| requiredSkills | Array | Required skills |
+| preferredSkills | Array | Preferred skills |
+| experience | String | Required experience |
+| location | String | Job location |
+| employmentType | String | Full-time / Internship |
+| embedding | Array | Vector embedding |
+| createdBy | ObjectId | Recruiter ID |
+| createdAt | Date | Timestamp |
 
 ---
 
-Collection: AI_Analysis
+# Collection: Candidates
 
-Purpose: Stores AI-generated analysis for each candidate.
+**Purpose:** Stores candidate profiles.
 
-_id: ObjectId
-candidateId: ObjectId
-jobId: ObjectId
-semanticScore: Number
-technicalScore: Number
-leadershipScore: Number
-learningScore: Number
-cultureFit: Number
-confidenceScore: Number
-overallScore: Number
-strengths: Array
-weaknesses: Array
-missingSkills: Array
-explanation: String
-recommendation: String
-createdAt: Date
-
----
-
-Collection: Shortlists
-
-Purpose: Stores shortlisted candidates.
-
-_id: ObjectId
-recruiterId: ObjectId
-jobId: ObjectId
-candidateId: ObjectId
-status: String
-notes: String
-createdAt: Date
+| Field | Type | Description |
+|-------|------|-------------|
+| _id | ObjectId | Candidate ID |
+| name | String | Candidate name |
+| email | String | Email |
+| phone | String | Phone number |
+| resumeUrl | String | Resume file URL |
+| github | String | GitHub profile |
+| linkedin | String | LinkedIn profile |
+| portfolio | String | Portfolio URL |
+| skills | Array | Extracted skills |
+| education | Array | Education history |
+| experience | Array | Work experience |
+| projects | Array | Projects |
+| certifications | Array | Certifications |
+| embedding | Array | Candidate embedding |
+| createdAt | Date | Timestamp |
 
 ---
 
-Collection: Chat_History
+# Collection: AI_Analysis
 
-Purpose: Stores recruiter conversations with the AI Copilot.
+**Purpose:** Stores AI-generated candidate insights.
 
-_id: ObjectId
-recruiterId: ObjectId
-message: String
-response: String
-timestamp: Date
-
----
-
-Relationships
-
-Recruiter
-    │
-    ├── creates ─────► Jobs
-    │
-    ├── shortlists ──► Candidates
-    │
-    └── chats with ──► AI Copilot
-
-Jobs
-    │
-    └── analyzed against ──► Candidates
-
-Candidates
-    │
-    └── generate ──► AI Analysis
-
-AI Analysis
-    │
-    └── produces ──► Ranked Candidatesstrengths| Array| Strengths
-weaknesses| Array| Weaknesses
-missingSkills| Array| Missing skills
+| Field | Type | Description |
+|-------|------|-------------|
+| _id | ObjectId | Analysis ID |
+| candidateId | ObjectId | Candidate reference |
+| jobId | ObjectId | Job reference |
+| semanticScore | Number | Semantic similarity |
+| technicalScore | Number | Technical fit |
+| leadershipScore | Number | Leadership score |
+| learningScore | Number | Learning ability |
+| cultureFit | Number | Culture fit |
+| confidenceScore | Number | AI confidence |
+| overallScore | Number | Final weighted score |
+| strengths | Array | Candidate strengths |
+| weaknesses | Array | Candidate weaknesses |
+| missingSkills | Array | Missing skills |
+| explanation | String | AI explanation |
+| recommendation | String | AI recommendation |
+| createdAt | Date | Timestamp |
 
 ---
 
-Collection: Shortlists
+# Collection: Shortlists
 
-Stores shortlisted candidates.
+**Purpose:** Stores shortlisted candidates.
 
-Field| Type| Description
-_id| ObjectId| Shortlist ID
-recruiterId| ObjectId| Recruiter
-jobId| ObjectId| Job
-candidateId| ObjectId| Candidate
-status| String| Shortlisted/Rejected/Hired
-createdAt| Date| Timestamp
+| Field | Type | Description |
+|-------|------|-------------|
+| _id | ObjectId | Shortlist ID |
+| recruiterId | ObjectId | Recruiter reference |
+| jobId | ObjectId | Job reference |
+| candidateId | ObjectId | Candidate reference |
+| status | String | Shortlisted / Rejected / Hired |
+| notes | String | Recruiter notes |
+| createdAt | Date | Timestamp |
 
 ---
 
-Collection: Chat History
+# Collection: Chat_History
 
-Stores AI Copilot conversations.
+**Purpose:** Stores AI Copilot conversations.
 
-Field| Type| Description
-_id| ObjectId| Chat ID
-recruiterId| ObjectId| Recruiter
-message| String| User prompt
-response| String| AI response
-createdAt| Date| Timestamp
+| Field | Type | Description |
+|-------|------|-------------|
+| _id | ObjectId | Chat ID |
+| recruiterId | ObjectId | Recruiter reference |
+| message | String | User message |
+| response | String | AI response |
+| timestamp | Date | Conversation timestamp |
