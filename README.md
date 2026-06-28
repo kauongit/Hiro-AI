@@ -12,59 +12,59 @@
                            │
           ┌────────────────┴────────────────┐
           │                                       │
-          ▼                                 ▼
-  Upload Job Description           Upload Candidate Resumes
+          ▼                                       ▼
+  Upload Job Description                Upload Candidate Resumes
           │                                       │
           └──────────────┬──────────────────┘
                          ▼
               📄 Document Processing Layer
         ┌────────────────────────────────────┐
-        │ • Resume Parser (PDF/DOCX)         │
-        │ • Job Description Parser           │
-        │ • Text Extraction                  │
-        │ • Metadata Extraction              │
+        │ • Resume Parser (PDF/DOCX)                │
+        │ • Job Description Parser                  │
+        │ • Text Extraction                         │
+        │ • Metadata Extraction                     │
         └────────────────────────────────────┘
                          │
                          ▼
              🧠 AI Intelligence Engine
         ┌────────────────────────────────────┐
-        │ • Semantic Job Understanding       │
-        │ • Candidate DNA Generation         │
-        │ • Skill Extraction                 │
-        │ • Experience Analysis              │
-        │ • Career Timeline Analysis         │
-        │ • Embedding Generation             │
+        │ • Semantic Job Understanding              │
+        │ • Candidate DNA Generation                │
+        │ • Skill Extraction                        │
+        │ • Experience Analysis                     │
+        │ • Career Timeline Analysis                │
+        │ • Embedding Generation                    │
         └────────────────────────────────────┘
                          │
                          ▼
             ⚡ Intelligent Ranking Engine
         ┌────────────────────────────────────┐
-        │ • Semantic Similarity              │
-        │ • Technical Skill Matching         │
-        │ • Learning Potential               │
-        │ • Leadership Analysis              │
-        │ • Culture Fit                      │
-        │ • Confidence Score                 │
+        │ • Semantic Similarity                     │
+        │ • Technical Skill Matching                │
+        │ • Learning Potential                      │
+        │ • Leadership Analysis                     │
+        │ • Culture Fit                             │
+        │ • Confidence Score                        │
         └────────────────────────────────────┘
                          │
                          ▼
               💡 Explainable AI Layer
         ┌────────────────────────────────────┐
-        │ • Why this candidate?              │
-        │ • Evidence & Reasoning             │
-        │ • Skill Gap Analysis               │
-        │ • Strengths & Weaknesses           │
-        │ • Hiring Recommendations           │
+        │ • Why this candidate?                     │
+        │ • Evidence & Reasoning                    │
+        │ • Skill Gap Analysis                      │
+        │ • Strengths & Weaknesses                  │
+        │ • Hiring Recommendations                  │
         └────────────────────────────────────┘
                          │
                          ▼
              📊 Recruiter Intelligence Hub
         ┌────────────────────────────────────┐
-        │ • AI Copilot                       │
-        │ • Candidate Ranking Dashboard      │
-        │ • Candidate Profiles               │
-        │ • Team Builder                     │
-        │ • Hiring Analytics                 │
+        │ • AI Copilot                              │
+        │ • Candidate Ranking Dashboard             │
+        │ • Candidate Profiles                      │
+        │ • Team Builder                            │
+        │ • Hiring Analytics                        │
         └────────────────────────────────────┘
 ```
 
