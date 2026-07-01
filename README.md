@@ -24,7 +24,7 @@
 
 ## AI Pipeline
 
-<img width="2816" height="1536" alt="Error" src="" />
+<img width="2816" height="1536" alt="Error" src="Assets/AI Pipeline.png" />
 
 
 ### AI Scoring Factors
