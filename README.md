@@ -2,7 +2,7 @@
 'HIRO' is an AI recruitment intelligence platform that analyzes candidates from multiple data sources, understands job requirements semantically, and explains why each candidate is the best fit.
 
 ### HIRO — Hiring Intelligence & Recruitment Optimization
-# System Architecture
+## System Architecture
 
 <img width="2816" height="1536" alt="Gemini_Generated_Image_qxfw8eqxfw8eqxfw" src="https://github.com/user-attachments/assets/ed6bace9-8e6b-4c91-99c1-6bac92bae9d5" />
 
