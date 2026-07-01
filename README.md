@@ -5,7 +5,7 @@
 # System Architecture
 
 <p align="center">
-  <img src="assets/architecture.png" alt="HIRO System Architecture" width="900">
+  <img src="blob:https://gemini.google.com/ada7d78a-90e0-4d9c-86e1-7d08898dba34" alt="HIRO System Architecture" width="900">
 </p>
 
 ## Technology Stack
