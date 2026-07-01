@@ -4,72 +4,9 @@
 ### HIRO — Hiring Intelligence & Recruitment Optimization
 # System Architecture
 
-```
-                               HIRO
-               AI Recruitment Intelligence Platform
-──────────────────────────────────────────────────────────────────────
-
-                    👨‍💼 Recruiter Portal
-                           │
-          ┌────────────────┴────────────────┐
-          │                                       │
-          ▼                                       ▼
-  Upload Job Description                Upload Candidate Resumes
-          │                                       │
-          └──────────────┬──────────────────┘
-                         ▼
-              📄 Document Processing Layer
-        ┌────────────────────────────────────┐
-        │ • Resume Parser (PDF/DOCX)                │
-        │ • Job Description Parser                  │
-        │ • Text Extraction                         │
-        │ • Metadata Extraction                     │
-        └────────────────────────────────────┘
-                         │
-                         ▼
-             🧠 AI Intelligence Engine
-        ┌────────────────────────────────────┐
-        │ • Semantic Job Understanding              │
-        │ • Candidate DNA Generation                │
-        │ • Skill Extraction                        │
-        │ • Experience Analysis                     │
-        │ • Career Timeline Analysis                │
-        │ • Embedding Generation                    │
-        └────────────────────────────────────┘
-                         │
-                         ▼
-            ⚡ Intelligent Ranking Engine
-        ┌────────────────────────────────────┐
-        │ • Semantic Similarity                     │
-        │ • Technical Skill Matching                │
-        │ • Learning Potential                      │
-        │ • Leadership Analysis                     │
-        │ • Culture Fit                             │
-        │ • Confidence Score                        │
-        └────────────────────────────────────┘
-                         │
-                         ▼
-              💡 Explainable AI Layer
-        ┌────────────────────────────────────┐
-        │ • Why this candidate?                     │
-        │ • Evidence & Reasoning                    │
-        │ • Skill Gap Analysis                      │
-        │ • Strengths & Weaknesses                  │
-        │ • Hiring Recommendations                  │
-        └────────────────────────────────────┘
-                         │
-                         ▼
-             📊 Recruiter Intelligence Hub
-        ┌────────────────────────────────────┐
-        │ • AI Copilot                              │
-        │ • Candidate Ranking Dashboard             │
-        │ • Candidate Profiles                      │
-        │ • Team Builder                            │
-        │ • Hiring Analytics                        │
-        └────────────────────────────────────┘
-```
-
----
+<p align="center">
+  <img src="assets/architecture.png" alt="HIRO System Architecture" width="900">
+</p>
 
 ## Technology Stack
 
