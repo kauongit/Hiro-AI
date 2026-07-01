@@ -24,7 +24,7 @@
 
 ## AI Pipeline
 
-<img width="2816" height="1536" alt="Error" src="https://github.com/user-attachments/assets/ed6bace9-8e6b-4c91-99c1-6bac92bae9d5" />
+<img width="2816" height="1536" alt="Error" src="[https://github.com/user-attachments/assets/ed6bace9-8e6b-4c91-99c1-6bac92bae9d5](https://github.com/kauongit/Hiro-AI/blob/104721605546797b941031d7f400f3418686c1f8/Assets/AI%20Pipeline.png)" />
 
 
 ### AI Scoring Factors
