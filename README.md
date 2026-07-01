@@ -24,7 +24,7 @@
 
 ## AI Pipeline
 
-<img width="2816" height="1536" alt="Error" src="https://gemini.google.com/f7da8792-d436-4dea-adf4-54316afb5e1f" />
+<img alt="Error" src="" />
 
 
 ### AI Scoring Factors
