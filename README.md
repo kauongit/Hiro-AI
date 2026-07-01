@@ -1,11 +1,11 @@
-# HIRO AI 
+<img width="2816" height="1536" alt="Gemini_Generated_Image_qxfw8eqxfw8eqxfw" src="https://github.com/user-attachments/assets/ed6bace9-8e6b-4c91-99c1-6bac92bae9d5" /># HIRO AI 
 'HIRO' is an AI recruitment intelligence platform that analyzes candidates from multiple data sources, understands job requirements semantically, and explains why each candidate is the best fit.
 
 ### HIRO — Hiring Intelligence & Recruitment Optimization
 # System Architecture
 
 <p align="center">
-  <img src="blob:https://gemini.google.com/ada7d78a-90e0-4d9c-86e1-7d08898dba34" alt="HIRO System Architecture" width="900">
+  <img src="C:\Users\ADMIN\Downloads\Gemini_Generated_Image_qxfw8eqxfw8eqxfw.png" alt="HIRO System Architecture" width="900">
 </p>
 
 ## Technology Stack
